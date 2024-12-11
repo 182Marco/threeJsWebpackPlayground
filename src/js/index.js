@@ -1,9 +1,6 @@
 import "../css/style.css";
 import * as THREE from "three";
 
-// Ottieni il canvas dal DOM
-const canvas = document.querySelector(".draw ");
-
 // Crea la scena
 const scene = new THREE.Scene();
 
@@ -24,9 +21,10 @@ scene.add(cube);
 // Posiziona la camera
 camera.position.z = 5;
 
-// Crea il renderer e usa il canvas esistente
-const renderer = new THREE.WebGLRenderer({ canvas: canvas });
-renderer.setSize(window.innerWidth, window.innerHeight);
+// Crea il renderer e aggiungi automaticamente il canvas al DOM
+const renderer = new THREE.WebGLRenderer();
+document.body.appendChild(renderer.domElement); // Aggiungi il canvas creato al DOM
+renderer.setSize(window.innerWidth, window.innerHeight); // Imposta le dimensioni del renderer
 
 // Funzione di animazione
 function animate() {
