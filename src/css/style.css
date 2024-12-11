@@ -1,0 +1,90 @@
+/* General resets and base settings */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Sets the box model */
+}
+
+/* Dracula theme for the body */
+body {
+  background-color: #282a36; /* Dark background color */
+  color: #f8f8f2; /* Primary text color */
+  font-family: "Fira Code", monospace; /* Monospaced font similar to VS Code */
+  line-height: 1.6; /* Readable line height */
+  margin: 0;
+  padding: 0;
+}
+
+.draw {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none; /* Removes the outline */
+}
+
+/* Links */
+a {
+  color: #8be9fd; /* Bright blue color */
+  text-decoration: none; /* Removes underline */
+}
+
+a:hover {
+  color: #50fa7b; /* Bright green for hover */
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ff79c6; /* Bright pink color */
+}
+
+/* Paragraphs */
+p {
+  margin: 0 0 1em; /* Basic spacing for paragraphs */
+}
+
+/* Code blocks */
+code {
+  background-color: #44475a; /* Dark gray background */
+  color: #f8f8f2; /* Light text color */
+  padding: 0.2em 0.4em; /* Padding for readability */
+  border-radius: 4px; /* Rounded corners */
+  font-family: "Fira Code", monospace; /* Monospaced font */
+}
+
+/* Highlights */
+.mark {
+  background-color: #bd93f9; /* Bright purple background */
+  color: #282a36; /* Dark text color */
+  padding: 0.2em 0.4em; /* Padding for emphasis */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Containers */
+.container {
+  border: 1px solid #6272a4; /* Gray/purple border */
+  padding: 20px; /* Spacing inside the container */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #44475a; /* Dark gray background */
+}
+
+/* Buttons */
+button {
+  background-color: #50fa7b; /* Bright green background */
+  color: #282a36; /* Dark text color */
+  border: none; /* Removes border */
+  padding: 10px 15px; /* Button spacing */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor for interaction */
+  font-family: "Fira Code", monospace; /* Monospaced font */
+}
+
+button:hover {
+  background-color: #8be9fd; /* Bright blue for hover */
+}
