@@ -1,5 +1,6 @@
 import "../css/style.css";
 import * as THREE from "three";
+import { BoxBufferGeometry } from "three";
 
 // Crea la scena
 const scene = new THREE.Scene();
@@ -13,8 +14,11 @@ const camera = new THREE.PerspectiveCamera(
 );
 
 // Crea un cubo
-const geometry = new THREE.BoxGeometry(1, 1, 1);
-const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+const geometry = new BoxBufferGeometry(1, 1, 1, 5, 5, 5);
+const material = new THREE.MeshBasicMaterial({
+  color: 0x00ff00,
+  wireframe: true,
+});
 const cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
 

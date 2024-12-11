@@ -19,12 +19,12 @@
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.3",
     "style-loader": "^4.0.0",
-    "three": "^0.171.0",
     "webpack": "^5.97.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0"
   },
   "dependencies": {
-    "open": "^10.1.0"
+    "open": "^10.1.0",
+    "three": "^0.140.0"
   }
 }
