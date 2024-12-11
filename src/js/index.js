@@ -1,3 +1,4 @@
+import "../css/style.css";
 import * as THREE from "three";
 
 // Ottieni il canvas dal DOM
